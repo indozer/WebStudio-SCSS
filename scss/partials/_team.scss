@@ -1,0 +1,95 @@
+.team {
+    background: #f5f4fa;
+    padding-bottom: 93px;
+    padding-top: 94px;
+
+      
+  &__item {
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+  }
+  
+  
+  &__list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  }
+  
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  }
+  
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+  }
+
+  
+  &__link {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: $transition-property $transition-duration;
+
+    &:hover, &:focus {
+      background-color: $main-color;
+    }
+    
+    & svg {
+      fill: rgb(161, 161, 161);
+    }
+    
+    &:hover svg {
+      fill: white;
+    }
+    
+    &:focus svg {
+      fill: white;
+    }
+  }
+
+  &__svg__list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  }
+  
+
+  
