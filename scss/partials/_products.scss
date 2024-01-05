@@ -1,13 +1,6 @@
 .product {
   padding-bottom: 94px;
 
-  &__list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-
   &__link {
     display: block;
     width: 101%;
@@ -71,9 +64,7 @@
       background: rgba(33, 150, 243, 0.9);
       top: 0;
       left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @extend %flex;
       text-align: start;
       opacity: 0;
     }
@@ -100,20 +91,13 @@
   }
 
   &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(33, 150, 243, 0.9);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    pointer-events: none;
+    @include overlay-style;
   }
+
+  &__list {
+    @extend %flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 @keyframes scale-up-ver-bottom {
@@ -132,27 +116,14 @@
 }
 
 .title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $second-color;
-  padding-left: 24px;
-  padding-top: 20px;
-  margin-bottom: 4px;
+  @include title-style;
 }
 
 .descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
-  padding-left: 24px;
-  padding-bottom: 20px;
+  @include description-style;
 }
 
 // .product__item:hover .product__overlay,
 // .product__item:focus-within .product__overlay {
 //   opacity: 1;
-// }
+}

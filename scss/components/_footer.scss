@@ -102,9 +102,7 @@
 
 .newsletter {
   &__button__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     margin-top: 20px;
   }
 
@@ -131,9 +129,7 @@
   }
 
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 200px;
     height: 50px;
     flex-shrink: 0;

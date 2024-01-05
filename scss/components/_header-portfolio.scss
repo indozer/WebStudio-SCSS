@@ -3,8 +3,7 @@
   padding-bottom: 25px;
 
   &__navigation {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     position: relative;
   }
 
@@ -121,8 +120,7 @@
 
   &__mail,
   &__tel {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     transition: color $transition-duration $transition-property;
   }
 
@@ -137,16 +135,13 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     margin-right: 344px;
   }
 
   &__list2 {
-    display: flex;
-    align-items: center;
+    @extend %flex;
     position: relative;
-    justify-content: center;
   }
 }
 
@@ -187,7 +182,6 @@
 
 .h__num,
 .h__mail {
-  display: flex;
-  align-items: center;
+  @extend %flex;
   fill: #757575;
 }

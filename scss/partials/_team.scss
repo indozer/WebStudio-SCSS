@@ -85,9 +85,8 @@
   }
 
   &__svg__list {
-    display: flex;
+    @extend %flex;
     gap: 10px;
-    justify-content: center;
   }
   }
   

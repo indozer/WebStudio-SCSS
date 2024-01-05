@@ -5,8 +5,7 @@
 
       
   &__list {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     gap: 8px;
   }
   
