@@ -21,8 +21,6 @@
     }
   }
 
-
-
   &__portfolio {
     font-weight: 500;
     font-size: 14px;
@@ -74,7 +72,7 @@
         transition: width 250ms cubic-bezier(0.4, 0, 0.02, 1),
           height 250ms cubic-bezier(0.4, 0, 0.02, 1);
       }
-      
+
       &:hover::after {
         width: 45px;
         height: 4px;
@@ -136,18 +134,16 @@
 
   &__list {
     @extend %flex;
-    margin-right: 344px;
+    margin-right: 315px;
   }
 
   &__list2 {
     @extend %flex;
-    position: relative;
+    flex-direction: row;
   }
 }
 
 /* навігація */
-
-
 
 .hstudio {
   margin-left: 93px;
@@ -184,4 +180,110 @@
 .h__mail {
   @extend %flex;
   fill: #757575;
+}
+
+.menu__header {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .header__navigation {
+    margin-right: 0;
+    gap: 150px;
+  }
+
+  .header__list,
+  .header__list2 {
+    display: none;
+  }
+
+  .menu__header {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__header {
+    display: none;
+  }
+
+  .header__list,
+  .header__list2 {
+    display: block;
+  }
+
+  .header__list {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    margin-left: 88px;
+    margin-right: 96px;
+  }
+
+  .header__list2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .header__logo {
+    margin-right: 0px;
+  }
+
+  .h__port,
+  .h__port,
+  .h__cont {
+    margin-left: 0px;
+  }
+
+  .hstudio {
+    margin-left: 0px;
+  }
+
+  .h__num {
+    display: block;
+    margin-right: 14px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .h__mail {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  .header__navigation {
+    margin-right: 0px;
+    gap: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .header__navigation {
+    gap: 0px;
+  }
+  
+  .header__list {
+    margin-left: 93px;
+    margin-right: 315px;
+  }
+
+  .header__list2 {
+    @extend %flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .h__num {
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 }

@@ -1,25 +1,22 @@
 .team {
-    background: #f5f4fa;
-    padding-bottom: 93px;
-    padding-top: 94px;
+  background: #f5f4fa;
+  padding-bottom: 60px;
 
-      
   &__item {
     background: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding-bottom: 30px;
   }
-  
-  
+
   &__list {
     display: flex;
     margin-top: 50px;
     justify-content: flex-start;
     gap: 30px;
   }
-  
+
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -27,8 +24,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $second-color;
+    padding-top: 60px;
   }
-  
+
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -37,7 +35,7 @@
     letter-spacing: 0.03em;
     color: $second-color;
   }
-  
+
   &__descr {
     font-weight: 400;
     font-size: 16px;
@@ -55,7 +53,6 @@
     margin-bottom: 30px;
   }
 
-  
   &__link {
     display: block;
     width: 100%;
@@ -67,18 +64,19 @@
     cursor: pointer;
     transition: $transition-property $transition-duration;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $main-color;
     }
-    
+
     & svg {
       fill: rgb(161, 161, 161);
     }
-    
+
     &:hover svg {
       fill: white;
     }
-    
+
     &:focus svg {
       fill: white;
     }
@@ -88,7 +86,61 @@
     @extend %flex;
     gap: 10px;
   }
+}
+
+@media screen and (min-width: 480px) {
+  
+  .team {
+    padding-top: 0px;
   }
   
+  .team__list {
+    flex-direction: column;
+  }
 
-  
+  .team__img {
+    width: 450px;
+    height: 460px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: calc((100% - 30px) / 2);
+  }
+
+  .team__item {
+    width: 354px;
+    height: 536px;
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+  }
+
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+    height: 428px;
+  }
+
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,6 +42,9 @@
               <a href="#" class="header__contacts">Контакти</a>
             </li>
           </ul>
+          <svg class="menu__header" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-menu_header"></use>
+          </svg>
           <ul class="header__list2">
             <li data-aos="fade-down" class="header__page h__mail">
               <a href="mailto:info@devstudio.com" class="header__mail">
@@ -78,9 +81,6 @@
         <div class="container">
           <ul class="advantage__list">
             <li class="advantage__item advantage__icon" data-aos="fade-right" data-aos-delay="200">
-              <!-- <svg class="antenna-svg" width="70" height="70">
-                <use href="./img/symbol-defs.svg#icon-antenna"></use>
-              </svg> -->
               <h3 class="advantage__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantage__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -88,9 +88,6 @@
               </p>
             </li>
             <li data-aos="fade-right" class="advantage__item advantage__icon">
-              <!-- <svg class="clock-svg" width="70" height="70">
-                <use href="./img/symbol-defs.svg#icon-clock"></use>
-              </svg> -->
               <h3 class="advantage__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantage__description">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -98,18 +95,12 @@
               </p>
             </li>
             <li data-aos="fade-left" class="advantage__item advantage__icon">
-              <!-- <svg class="clock-svg" width="70" height="70">
-                <use href="./img/symbol-defs.svg#icon-diagram"></use>
-              </svg> -->
               <h3 class="advantage__title">ПЛАНУВАННЯ</h3>
               <p class="advantage__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li data-aos="fade-left" data-aos-delay="200" class="advantage__item advantage__icon">
-              <!-- <svg class="clock-svg" width="70" height="70">
-                <use href="./img/symbol-defs.svg#icon-astronaut"></use>
-              </svg> -->
               <h3 class="advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantage__description">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -453,7 +444,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>  
     <footer data-aos="fade-up" class="footer">
       <div class="container footer__container">
         <div class="footer__information">

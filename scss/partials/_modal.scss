@@ -27,7 +27,7 @@
 
 .modal-input {
   border-radius: 4px;
-  border: 2px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   width: 448px;
   height: 40px;
   flex-shrink: 0;
@@ -39,12 +39,12 @@
 
 .modal-input:hover {
   border-radius: 4px;
-  border: 2px solid $main-color;
+  border: 1px solid $main-color;
 }
 
 .modal-input:active {
   border-radius: 4px;
-  border: 2px solid $main-color;
+  border: 1px solid $main-color;
 }
 
 .modal-label:hover .modal-persona,
@@ -61,7 +61,7 @@
 
 .modal-input:focus {
   border-radius: 4px;
-  border: 2px solid $main-color;
+  border: 1px solid $main-color;
 }
 
 .modal-comment {
@@ -78,12 +78,12 @@
 
 .modal-comment:hover {
   border-radius: 4px;
-  border: 2px solid $main-color;
+  border: 1px solid $main-color;
 }
 
 .modal-comment:focus {
   border-radius: 4px;
-  border: 2px solid $main-color;
+  border: 1px solid $main-color;
 }
 
 .modal-checkbox {
@@ -215,4 +215,104 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+    height: 650px;
+  }
+
+  .modal-input {
+    width: 370px;
+    height: 40px;
+  }
+
+  .modal-comment {
+    padding-right: 170px;
+  }
+
+  .label-terms {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
+
+  .blue-terms {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-decoration-line: underline;
+  }
+
+  .modal-send {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 85px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 626px;
+  }
+
+  .modal-input {
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .modal-comment {
+    width: 448px;
+    height: 120px;
+    color: rgba(117, 117, 117, 0.5);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .label-terms {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+  }
+
+  .blue-terms {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+  }
+
+  .modal-send {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 115px;
+  }
 }

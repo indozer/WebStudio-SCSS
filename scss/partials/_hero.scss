@@ -5,16 +5,13 @@
   background-image: url(../../img/hero-bg.webp);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../img/hero-bg.webp);
-  padding-bottom: 200px;
-  padding-top: 200px;
   background-repeat: no-repeat;
   background-size: cover;
-
 
   &__btn {
     @include button-style;
   }
-  
+
   &__title {
     font-weight: 900;
     font-size: 44px;
@@ -24,7 +21,4 @@
     text-transform: uppercase;
     color: #ffffff;
   }
-
 }
-
-
