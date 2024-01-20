@@ -186,6 +186,22 @@
   display: none;
 }
 
+@media screen and (min-width: 320px) {
+  .header__navigation {
+    margin-right: 0;
+    gap: 20px;
+  }
+
+  .header__list,
+  .header__list2 {
+    display: none;
+  }
+
+  .menu__header {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .header__navigation {
     margin-right: 0;

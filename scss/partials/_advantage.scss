@@ -56,6 +56,28 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantage__title {
+    text-align: center;
+  }
+
+  .advantage__item {
+    width: 309px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .advantage {
     padding-bottom: 60px;

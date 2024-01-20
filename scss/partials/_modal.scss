@@ -217,6 +217,29 @@
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal-window {
+    width: 330px;
+    height: 700px;
+  }
+
+  .modal-input {
+    width: 260px;
+    height: 40px;
+  }
+
+  .modal-comment {
+    padding-right: 60px;
+  }
+
+  .modal-send {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 25px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal-window {
     width: 450px;

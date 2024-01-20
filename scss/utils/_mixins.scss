@@ -25,10 +25,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    @extend %flex;
+    background: rgba(33, 150, 243, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    pointer-events: none;
+    transition: opacity 0.4s ease;
+    user-select: none;
   }
   
   @mixin title-style {
@@ -36,10 +42,10 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: $second-color;
     padding-left: 24px;
     padding-top: 20px;
     margin-bottom: 4px;
-    color: $second-color;
   }
   
   @mixin description-style {

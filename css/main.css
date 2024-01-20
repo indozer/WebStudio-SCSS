@@ -247,6 +247,19 @@ input {
   display: none;
 }
 
+@media screen and (min-width: 320px) {
+  .header__navigation {
+    margin-right: 0;
+    gap: 20px;
+  }
+  .header__list,
+  .header__list2 {
+    display: none;
+  }
+  .menu__header {
+    display: block;
+  }
+}
 @media screen and (min-width: 480px) {
   .header__navigation {
     margin-right: 0;
@@ -418,6 +431,24 @@ input {
   background-image: url(../../img/astronaut.png);
 }
 
+@media screen and (min-width: 320px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
+  .advantage__list {
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .advantage__title {
+    text-align: center;
+  }
+  .advantage__item {
+    width: 309px;
+  }
+}
 @media screen and (min-width: 480px) {
   .advantage {
     padding-bottom: 60px;
@@ -520,6 +551,23 @@ input {
   top: 14px;
 }
 
+@media screen and (min-width: 320px) {
+  .clients__list {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 1);
+    display: flex;
+    justify-content: center;
+  }
+  .clients__link {
+    width: 210px;
+    height: 92px;
+  }
+  .clients__svg {
+    position: absolute;
+    top: 17px;
+    right: 50px;
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__list {
     flex-wrap: wrap;
@@ -605,6 +653,11 @@ input {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 320px) {
+  .company {
+    display: none;
+  }
+}
 @media screen and (min-width: 480px) {
   .company {
     display: none;
@@ -696,6 +749,19 @@ input {
   gap: 10px;
 }
 
+@media screen and (min-width: 320px) {
+  .team {
+    padding-top: 0px;
+  }
+  .team__list {
+    flex-direction: column;
+  }
+  .team__img {
+    width: 100%;
+    height: 320px;
+    flex-shrink: 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .team {
     padding-top: 0px;
@@ -895,6 +961,37 @@ input {
   letter-spacing: 0.78px;
 }
 
+@media screen and (min-width: 320px) {
+  .footer__container,
+  .social,
+  .newsletter__button__container {
+    flex-direction: column;
+  }
+  .footer__information {
+    margin-left: 70px;
+    text-align: center;
+  }
+  .social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 45px;
+  }
+  .social__text {
+    margin-left: 45px;
+  }
+  .newsletter__form {
+    text-align: center;
+  }
+  .newsletter__input {
+    width: 300px;
+    height: 50px;
+  }
+  .newsletter__button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer__container,
   .social,
@@ -950,7 +1047,7 @@ input {
   .newsletter {
     margin-top: 20px;
     text-align: center;
-    flex-basis: calc(100% - 20px); /* Calculate the width to take up the remaining space */
+    flex-basis: calc(100% - 20px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1212,6 +1309,25 @@ input {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal-window {
+    width: 330px;
+    height: 700px;
+  }
+  .modal-input {
+    width: 260px;
+    height: 40px;
+  }
+  .modal-comment {
+    padding-right: 60px;
+  }
+  .modal-send {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 25px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal-window {
     width: 450px;

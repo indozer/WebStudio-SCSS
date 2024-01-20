@@ -44,6 +44,12 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .company {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .company {
     display: none;
