@@ -381,6 +381,32 @@ input {
   color: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  .hero__title {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+  }
+}
 .advantage {
   padding-top: 95px;
   padding-bottom: 94px;
@@ -434,6 +460,7 @@ input {
 @media screen and (min-width: 320px) {
   .advantage {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
   .advantage__list {
     flex-direction: column;
@@ -465,6 +492,10 @@ input {
   }
 }
 @media screen and (min-width: 768px) {
+  .advantage {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   .advantage__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -479,8 +510,14 @@ input {
   }
 }
 @media screen and (min-width: 1200px) {
+  .advantage {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   .advantage__list {
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
   }
   .advantage__item {
     width: 270px;
@@ -491,7 +528,6 @@ input {
 }
 .clients__list {
   display: flex;
-  margin-bottom: 94px;
   margin-top: 50px;
   gap: 30px;
 }
@@ -552,6 +588,9 @@ input {
 }
 
 @media screen and (min-width: 320px) {
+  .clients {
+    padding-top: 60px;
+  }
   .clients__list {
     flex-wrap: wrap;
     flex-basis: calc((100% - 20px) / 1);
@@ -599,6 +638,10 @@ input {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .clients__list {
     flex-wrap: nowrap;
   }
@@ -697,7 +740,6 @@ input {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 60px;
 }
 .team__name {
   font-weight: 500;
@@ -751,7 +793,7 @@ input {
 
 @media screen and (min-width: 320px) {
   .team {
-    padding-top: 0px;
+    padding-top: 60px;
   }
   .team__list {
     flex-direction: column;
@@ -795,6 +837,10 @@ input {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .team__item {
     width: 270px;
     height: 428px;

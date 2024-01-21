@@ -4,7 +4,6 @@
 
   &__list {
     display: flex;
-    margin-bottom: 94px;
     margin-top: 50px;
     gap: 30px;
   }
@@ -76,6 +75,11 @@
 }
 
 @media screen and (min-width: 320px) {
+
+  .clients {
+    padding-top: 60px;
+  }
+
   .clients__list {
     flex-wrap: wrap;
     flex-basis: calc((100% - 20px) / 1);
@@ -132,6 +136,12 @@
 }
 
 @media screen and (min-width:1200px) {
+
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
   .clients__list {
     flex-wrap: nowrap;
   }
