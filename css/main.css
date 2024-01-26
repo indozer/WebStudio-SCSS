@@ -26,6 +26,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -382,6 +387,10 @@ input {
 }
 
 @media screen and (min-width: 320px) {
+  .hero {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
   .hero__title {
     color: #fff;
     text-align: center;
@@ -392,6 +401,9 @@ input {
     line-height: 42px;
     letter-spacing: 1.56px;
     text-transform: uppercase;
+  }
+  .hero__btn {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -405,6 +417,13 @@ input {
     line-height: 60px; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
+  }
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+  .hero__btn {
+    margin-top: 40px;
   }
 }
 .advantage {
@@ -429,7 +448,7 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .advantage__item {
   width: 270px;
@@ -590,6 +609,10 @@ input {
 @media screen and (min-width: 320px) {
   .clients {
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients__text {
+    font-size: 28px;
   }
   .clients__list {
     flex-wrap: wrap;
@@ -641,6 +664,9 @@ input {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .clients__text {
+    font-size: 36px;
   }
   .clients__list {
     flex-wrap: nowrap;
@@ -795,6 +821,9 @@ input {
   .team {
     padding-top: 60px;
   }
+  .team__title {
+    font-size: 28px;
+  }
   .team__list {
     flex-direction: column;
   }
@@ -806,7 +835,7 @@ input {
 }
 @media screen and (min-width: 480px) {
   .team {
-    padding-top: 0px;
+    padding-top: 60px;
   }
   .team__list {
     flex-direction: column;
@@ -840,6 +869,9 @@ input {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .team__title {
+    font-size: 36px;
   }
   .team__item {
     width: 270px;
@@ -1020,7 +1052,7 @@ input {
   .social {
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 45px;
+    margin-left: 40px;
   }
   .social__text {
     margin-left: 45px;
@@ -1165,7 +1197,7 @@ input {
 
 .modal-input {
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(33, 33, 33, 0.2);
   width: 448px;
   height: 40px;
   flex-shrink: 0;
@@ -1177,12 +1209,12 @@ input {
 
 .modal-input:hover {
   border-radius: 4px;
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .modal-input:active {
   border-radius: 4px;
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .modal-label:hover .modal-persona,
@@ -1199,7 +1231,7 @@ input {
 
 .modal-input:focus {
   border-radius: 4px;
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .modal-comment {
@@ -1216,12 +1248,12 @@ input {
 
 .modal-comment:hover {
   border-radius: 4px;
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .modal-comment:focus {
   border-radius: 4px;
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .modal-checkbox {
@@ -1461,4 +1493,206 @@ input {
     flex-shrink: 0;
     margin-left: 115px;
   }
+}
+* {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+/* blue */
+/* black */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  display: none;
+}
+
+.menu.is-visible {
+  display: block;
+}
+
+.menu__container {
+  position: relative;
+  padding-left: 40px;
+}
+
+.menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+  gap: 33px;
+  margin-bottom: 302px;
+}
+
+.menu__list > li > a {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.menu__list > li > a:hover {
+  color: #2196f3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.menu__list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.menu__list2 > li:nth-child(1) > a {
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+
+.menu__list2 > li:nth-child(2) > a {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__line {
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+}
+
+.menu__links > li > a {
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+}
+
+.menu__links > div {
+  margin-left: 10px;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

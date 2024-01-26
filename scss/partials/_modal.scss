@@ -27,7 +27,7 @@
 
 .modal-input {
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(33, 33, 33, 0.2);
   width: 448px;
   height: 40px;
   flex-shrink: 0;
@@ -39,12 +39,12 @@
 
 .modal-input:hover {
   border-radius: 4px;
-  border: 1px solid $main-color;
+  border: 2px solid $main-color;
 }
 
 .modal-input:active {
   border-radius: 4px;
-  border: 1px solid $main-color;
+  border: 2px solid $main-color;
 }
 
 .modal-label:hover .modal-persona,
@@ -61,7 +61,7 @@
 
 .modal-input:focus {
   border-radius: 4px;
-  border: 1px solid $main-color;
+  border: 2px solid $main-color;
 }
 
 .modal-comment {
@@ -78,12 +78,12 @@
 
 .modal-comment:hover {
   border-radius: 4px;
-  border: 1px solid $main-color;
+  border: 2px solid $main-color;
 }
 
 .modal-comment:focus {
   border-radius: 4px;
-  border: 1px solid $main-color;
+  border: 2px solid $main-color;
 }
 
 .modal-checkbox {

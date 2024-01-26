@@ -42,7 +42,7 @@
               <a href="#" class="header__contacts">Контакти</a>
             </li>
           </ul>
-          <svg class="menu__header" width="40" height="40">
+          <svg data-menu-open class="menu__header" width="40" height="40">
             <use href="./img/symbol-defs.svg#icon-menu_header"></use>
           </svg>
           <ul class="header__list2">
@@ -586,7 +586,33 @@
       </div>
     </div>
 
-    <script src="main.js"></script>
+    <div class="menu" data-menu>
+      <div class="menu__container">
+      <svg data-menu-close class="menu__close" width="40" height="40">
+        <use href="./img/symbol-defs.svg#icon-close-menu"></use>
+      </svg>
+      <ul class="menu__list">
+        <li class="menu__studio"><a href="index.html">Студія</a></li>
+        <li class="menu__portfolio"><a href="portfolio.html">Портфоліо</a></li>
+        <li class="menu__contacts"><a href="#">Контакти</a></li>
+      </ul>
+      <ul class="menu__list2">
+        <li class="menu__number"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="menu__email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu__links">
+        <li class="menu__link"><a target="_blank" href="https://instagram.com">Instagram</a></li>
+        <div class="menu__line"></div>
+        <li class="menu__link"><a target="_blank" href="https://twitter.com" href="#">Twitter</a></li>
+        <div class="menu__line"></div>
+        <li class="menu__link"><a target="_blank" href="https://facebook.com" href="#">Facebook</a></li>
+        <div class="menu__line"></div>
+        <li class="menu__link"><a target="_blank" href="https://linkedin.com" href="#">LinkedIn</a></li>
+      </ul>
+      </div>
+
+    <script type="module" src="modal-menu.js"></script>
+    <script type="module" src="mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
