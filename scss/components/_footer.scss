@@ -182,18 +182,22 @@
   }
 
   .footer__information {
-    margin-left: 70px;
+    margin: 0;
     text-align: center;
   }
 
   .social {
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 40px;
+    margin-right: 0px;
+  }
+
+  .social__list {
+    justify-content: center;
   }
 
   .social__text {
-    margin-left: 45px;
+    text-align: center;
   }
 
   .newsletter__form {
@@ -209,6 +213,7 @@
     margin-top: 20px;
     width: 200px;
     height: 50px;
+    margin-left: 0px;
   }
 }
 
@@ -220,18 +225,12 @@
   }
 
   .footer__information {
-    margin-left: 60px;
     text-align: center;
   }
 
   .social {
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 117px;
-  }
-
-  .social__text {
-    margin-left: 45px;
   }
 
   .newsletter__form {
@@ -264,7 +263,6 @@
 
   .footer__information {
     text-align: center;
-    margin-left: 76px;
     margin-bottom: 60px;
   }
 
@@ -272,7 +270,6 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 89px;
   }
 
   .newsletter {
