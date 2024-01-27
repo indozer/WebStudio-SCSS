@@ -104,6 +104,7 @@ input {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 .header__navigation {
   position: relative;
@@ -1161,6 +1162,7 @@ input {
     margin-top: 0px;
     width: 200px;
     height: 50px;
+    margin-left: 12px;
   }
   .newsletter__input {
     width: 358px;
