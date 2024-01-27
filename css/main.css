@@ -291,7 +291,7 @@ input {
     gap: 50px;
     flex-direction: row;
     margin-left: 88px;
-    margin-right: 96px;
+    margin-right: auto;
   }
   .header__list2 {
     display: flex;
@@ -619,6 +619,7 @@ input {
     flex-basis: calc((100% - 20px) / 1);
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
   .clients__link {
     width: 210px;
@@ -670,6 +671,7 @@ input {
   }
   .clients__list {
     flex-wrap: nowrap;
+    margin-top: 50px;
   }
   .clients__link {
     width: 170px;
@@ -825,6 +827,7 @@ input {
     font-size: 28px;
   }
   .team__list {
+    margin-top: 30px;
     flex-direction: column;
   }
   .team__img {
@@ -882,6 +885,7 @@ input {
     height: 260px;
   }
   .team__list {
+    margin-top: 50px;
     flex-wrap: nowrap;
   }
 }
