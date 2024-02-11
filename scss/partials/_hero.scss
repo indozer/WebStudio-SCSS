@@ -7,7 +7,6 @@
     url(../../img/hero-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  
 
   &__btn {
     @include button-style;
@@ -28,8 +27,20 @@
   .hero {
     padding-bottom: 118px;
     padding-top: 118px;
+    background-image: url(../../img/phone/hero-bg@1x.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/phone/hero-bg@1x.webp);
+      background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-size: cover;
+      background-image: url(../../img/phone/hero-bg@2x.webp);
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../img/phone/hero-bg@2x.webp);
+    }
   }
-  
+
   .hero__title {
     color: #fff;
     text-align: center;
@@ -42,16 +53,31 @@
     text-transform: uppercase;
   }
 
-
-  .hero__btn{
+  .hero__btn {
     margin-top: 30px;
   }
+}
 
+@media screen and (min-width: 720px) {
+  .hero {
+    background-image: url(../../img/tablet/hero-bg@1x.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/tablet/hero-bg@1x.webp);
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-size: cover;
+        background-image: url(../../img/tablet/hero-bg@2x.webp);
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../../img/tablet/hero-bg@2x.webp);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Roboto;
     font-size: 44px;
@@ -65,10 +91,21 @@
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
+    background-image: url(../../img/desktop/hero-bg@1x.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/desktop/hero-bg@1x.webp);
+      background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-size: cover;
+        background-image: url(../../img/desktop/hero-bg@2x.webp);
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../../img/desktop/hero-bg@2x.webp);
+    }
   }
 
-  
-  .hero__btn{
+  .hero__btn {
     margin-top: 40px;
   }
 }
